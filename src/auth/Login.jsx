@@ -27,13 +27,13 @@ function Login({ props }) {
                 return toast.error("Error Notification !");
             })
     }
-    let hasToken = JSON.parse(localStorage.getItem('auth'));
-    if (hasToken !== null) {
-        return window.location = '/home'
-    }
-    else {
-        return window.location = '/'
-    }
+    // let hasToken = JSON.parse(localStorage.getItem('auth'));
+    // if (hasToken !== null) {
+    //     return window.location = '/home'
+    // }
+    // else {
+    //     return window.location = '/'
+    // }
     return (
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%' }}>
             <form style={{ width: '50%' }} onSubmit={handleSubmit}>
